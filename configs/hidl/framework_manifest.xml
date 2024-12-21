@@ -5,7 +5,7 @@
         vendor/xiaomi/proprietary/miwillp/port/src/manifest.xml
         vendor/xiaomi/proprietary/minet/port/src/manifest.xml
 -->
-<manifest version="4.0" type="device" target-level="8">
+<manifest version="4.0" type="framework" target-level="8">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -140,7 +140,6 @@
     </hal>
     <hal format="aidl">
         <name>android.system.keystore2</name>
-        <version>3</version>
         <interface>
             <name>IKeystoreService</name>
             <instance>default</instance>

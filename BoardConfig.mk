@@ -124,7 +124,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 OF_DEFAULT_KEYMASTER_VERSION := 4.1
 
 # HIDL
-#DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/framework_manifest.xml
-DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/recovery/root/vendor/manifest.xml
-#DEVICE_MATRIX_FILE   := hardware/interfaces/compatibility_matrices/compatibility_matrix.8.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/framework_manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
+DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.device.xml
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
