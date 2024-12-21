@@ -50,6 +50,10 @@ PRODUCT_PACKAGES += \
     fastbootd \
     android.hardware.fastboot-service.example_recovery
 
+# Logcat
+PRODUCT_PACKAGES += \
+    logcat
+
 # Paritions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION  := false
