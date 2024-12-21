@@ -40,7 +40,8 @@ PRODUCT_PACKAGES += \
     qcom_decrypt_fbe
     
 PRODUCT_PACKAGES += \
-    android.system.keystore2
+    android.system.keystore2 \
+    libbinder_ndk
 
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
