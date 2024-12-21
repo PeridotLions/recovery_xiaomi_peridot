@@ -119,6 +119,9 @@ TW_INCLUDE_REPACKTOOLS := true
 TW_MAX_BRIGHTNESS := 200
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 
+# OrangeFox configuration
+OF_DEFAULT_KEYMASTER_VERSION := 4.1
+
 # HIDL
 #DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/framework_manifest.xml
 #DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
