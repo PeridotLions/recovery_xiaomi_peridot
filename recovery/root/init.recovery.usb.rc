@@ -48,7 +48,8 @@ on charger
     wait /sys/class/udc/${sys.usb.controller}
     setprop sys.usb.configfs 1
 
-on zygote-start
+on fs
+    mkdir /config
     mount configfs none /config
     chown system usb /config/usb_gadget/
     mkdir /config/usb_gadget/g1 0770 system usb
