@@ -51,9 +51,8 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot-service.example_recovery
 
 # Logcat
-PRODUCT_PACKAGES += \
-    logcat \
-    logcatd
+TWRP_INCLUDE_LOGCAT := true
+
 
 # Paritions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
