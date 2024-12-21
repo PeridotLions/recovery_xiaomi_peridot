@@ -7,6 +7,7 @@
 DEVICE_PATH := device/xiaomi/peridot
 
 # For building with minimal manifest
+OF_SKIP_FBE_DECRYPTION := 1
 ALLOW_MISSING_DEPENDENCIES := true
 
 # A/B
