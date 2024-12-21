@@ -52,7 +52,8 @@ PRODUCT_PACKAGES += \
 
 # Logcat
 PRODUCT_PACKAGES += \
-    logcat
+    logcat \
+    logcatd
 
 # Paritions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
