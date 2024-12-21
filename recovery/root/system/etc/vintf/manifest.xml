@@ -137,8 +137,7 @@
         <name>android.system.keystore2</name>
         <version>3</version>
         <interface>
-            <name>IKeystoreService</name>
-            <instance>default</instance>
+            <name>IKeystoreService/default</name>
         </interface>
     </hal>
     <sepolicy>
