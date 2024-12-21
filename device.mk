@@ -31,6 +31,17 @@ PRODUCT_PACKAGES += \
     update_verifier \
     update_engine_sideload
 
+# Crypto
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
+BOARD_USES_METADATA_PARTITION := true
+BOARD_USES_QCOM_FBE_DECRYPTION := true
+
 # FastbootD
 PRODUCT_PACKAGES += \
     fastbootd \
