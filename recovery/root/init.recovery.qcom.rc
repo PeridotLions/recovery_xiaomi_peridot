@@ -61,3 +61,24 @@ on boot
     setprop sys.usb.config adb
 
 # END Recovery_StabilityEnhance
+
+service keystore /system/bin/keystore2 /tmp/misc/keystore
+    user root
+    group root drmrpc readproc
+    disabled
+    seclabel u:r:recovery:s0
+
+service keymint-beanpod /vendor/bin/hw/android.hardware.security.keymint-service-qti
+    class early_hal
+    user root
+    group root drmrpc
+    disabled
+    seclabel u:r:recovery:s0
+
+service gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+    interface android.hardware.gatekeeper@1.0::IGatekeeper default
+    class hal
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
