@@ -37,11 +37,8 @@ PRODUCT_PACKAGES += \
     qcom_decrypt_fbe
     
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor \
-    android.hardware.keymaster@4.1.vendor \
-    android.hardware.keymaster@3.0.vendor \
     android.system.keystore2
-    
+
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
