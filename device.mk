@@ -14,15 +14,14 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
+    android.hardware.boot-service.qti.recovery
 
 PRODUCT_PACKAGES += \
-    bootctrl.pineapple
+    bootctrl
 
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.pineapple \
-    libgptutils \
+    bootctrl \
+    libgptutils.peridot \
     libz \
     libcutils
 
