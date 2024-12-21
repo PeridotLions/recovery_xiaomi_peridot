@@ -57,16 +57,10 @@ BOARD_BOOTIMG_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_CONFIG := peridot_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/peridot
+TARGET_KERNEL_SOURCE := /dev/null
 
 # Ramdisk compression
 BOARD_RAMDISK_USE_LZ4 := true
-
-# Kernel - prebuilt
-TARGET_FORCE_PREBUILT_KERNEL := true
-ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
-endif
 
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
