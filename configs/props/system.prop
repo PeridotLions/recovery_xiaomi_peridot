@@ -1,0 +1,9 @@
+# Encryption
+fbe.metadata.wrappedkey=true
+vendor.gatekeeper.disable_spu=true
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# Unsecure ADB
+ro.adb.secure=0
