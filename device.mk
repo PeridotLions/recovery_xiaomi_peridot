@@ -43,6 +43,14 @@ PRODUCT_PACKAGES += \
     android.system.keystore2 \
     libbinder_ndk
 
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint \
+    android.hardware.security.secureclock \
+    android.hardware.security.sharedsecret \
+    android.hardware.security.keymint-service.strongbox
+
+
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true

@@ -25,6 +25,9 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
+
+import /init.recovery.qcom_decrypt.rc
+
 on early-init
     insmod /vendor/lib/modules/q6_pdr_dlkm.ko
     insmod /vendor/lib/modules/q6_notifier_dlkm.ko
@@ -61,38 +64,4 @@ on fs
 on boot
     setprop sys.usb.config adb
 
-on property:vendor.sys.listeners.registered=true
-    start keymint-qti
-    start gatekeeper-1-0
-
 # END Recovery_StabilityEnhance
-
-service keystore2 /system/bin/keystore2 /tmp/misc/keystore
-    user root
-    group root drmrpc readproc
-    disabled
-    seclabel u:r:recovery:s0
-
-service keymint-qti /vendor/bin/hw/android.hardware.security.keymint-service-qti
-    class early_hal
-    user root
-    group root drmrpc
-    disabled
-    seclabel u:r:recovery:s0
-
-service gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-    interface android.hardware.gatekeeper@1.0::IGatekeeper default
-    class hal
-    user root
-    group root
-    disabled
-    seclabel u:r:recovery:s0
-
-
-service vendor.qseecomd /vendor/bin/qseecomd
-    socket notify-topology stream 660 system drmrpc
-    class core
-    user root
-    group root drmrpc
-    disabled
-    seclabel u:r:recovery:s0
