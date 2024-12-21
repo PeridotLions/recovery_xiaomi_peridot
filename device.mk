@@ -31,3 +31,8 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
+
+# FastbootD
+PRODUCT_PACKAGES += \
+    fastbootd \
+    android.hardware.fastboot-service.example_recovery
