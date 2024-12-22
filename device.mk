@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0
+
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint \
