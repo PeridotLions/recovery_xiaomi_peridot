@@ -149,6 +149,16 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IMiwillService/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>android.hardware.gatekeeper</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IGatekeeper</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IGatekeeper/default</fqname>
+    </hal>
     <sepolicy>
         <version>34.0</version>
     </sepolicy>
