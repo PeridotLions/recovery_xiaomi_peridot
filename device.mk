@@ -47,17 +47,18 @@ PRODUCT_PACKAGES += \
     android.hardware.security.secureclock-V1-ndk_platform \
     android.hardware.security.sharedsecret \
     android.hardware.keymaster-V3-ndk_platform \
-    android.hardware.keymaster@4.1 \
-    android.hardware.keymaster@4.0 \
     libkeymint \
+    strace \
     libpuresoftkeymasterdevice
 
 
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_CRYPTO := false
+TW_INCLUDE_CRYPTO_FBE := false
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 BOARD_USES_METADATA_PARTITION := true
-BOARD_USES_QCOM_FBE_DECRYPTION := true
+BOARD_USES_QCOM_FBE_DECRYPTION := false
+BOARD_USES_QCOM_DECRYPTION := false
+
 
 # FastbootD
 PRODUCT_PACKAGES += \

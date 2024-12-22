@@ -5,7 +5,7 @@
         vendor/xiaomi/proprietary/miwillp/port/src/manifest.xml
         vendor/xiaomi/proprietary/minet/port/src/manifest.xml
 -->
-<manifest version="4.0" type="device" target-level="8">
+<manifest version="4.0" type="framework" target-level="8">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -148,10 +148,10 @@
         </interface>
         <fqname>@1.0::IGatekeeper/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.keymaster</name>
+        <hal format="hidl">
+        <name>vendor.qti.hardware.qteeconnector</name>
         <transport>hwbinder</transport>
-        <fqname>@4.1::IKeymasterDevice/default</fqname>
+        <fqname>@1.0::IAppConnector/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.xiaomi.hidl.miwill</name>

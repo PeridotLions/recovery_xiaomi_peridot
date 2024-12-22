@@ -138,12 +138,6 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::ITokenManager/default</fqname>
     </hal>
-
-    <hal format="hidl">
-        <name>android.hardware.keymaster</name>
-        <transport>hwbinder</transport>
-        <fqname>@4.1::IKeymasterDevice/default</fqname>
-    </hal>
     <hal format="hidl">
         <name>vendor.xiaomi.hidl.miwill</name>
         <transport>hwbinder</transport>
@@ -158,6 +152,11 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IGatekeeper/default</fqname>
+    </hal>
+        <hal format="hidl">
+        <name>vendor.qti.hardware.qteeconnector</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAppConnector/default</fqname>
     </hal>
     <sepolicy>
         <version>34.0</version>
