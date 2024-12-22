@@ -127,3 +127,5 @@ OF_DEFAULT_KEYMASTER_VERSION := 4.0
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.device.xml
+PRODUCT_ENFORCE_VINTF_MANIFEST := true
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
