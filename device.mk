@@ -46,9 +46,18 @@ PRODUCT_PACKAGES += \
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint \
+    android.hardware.security.keymint-ndk_platform \
+    android.hardware.security.keymint-V1-ndk_platform \
+    android.hardware.security.keymint-service \
+    android.hardware.security.keymint-service.trusty \
     android.hardware.security.secureclock \
+    android.hardware.security.secureclock-V1-ndk_platform \
     android.hardware.security.sharedsecret \
-    android.hardware.security.keymint-service.strongbox
+    android.hardware.keymaster-V3-ndk_platform \
+    android.hardware.keymaster@4.1 \
+    android.hardware.keymaster@4.0 \
+    libkeymint \
+    libpuresoftkeymasterdevice
 
 
 TW_INCLUDE_CRYPTO := true
