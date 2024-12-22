@@ -38,10 +38,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
-    
-PRODUCT_PACKAGES += \
-    android.system.keystore2 \
-    libbinder_ndk
 
 # Keymint
 PRODUCT_PACKAGES += \
