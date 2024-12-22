@@ -1,4 +1,9 @@
+on property:ro.crypto.state=encrypted && property:hwservicemanager.ready=true
+    start vendor.secure_element
+
 service vendor.secure_element /vendor/bin/hw/android.hardware.secure_element-service.qti
     class hal
     user system
     group nfc system
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin:/vendor/lib64/hw
+    seclabel u:r:recovery:s0
