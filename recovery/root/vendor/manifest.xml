@@ -34,6 +34,15 @@
         <transport>hwbinder</transport>
         <fqname>@1.2::ISecureElement/eSE1</fqname>
     </hal>
+    <hal format="aidl">
+        <name>android.se.omapi</name>
+        <version>1</version>
+        <interface>
+            <name>ISecureElementService</name>
+            <instance>default</instance>
+        </interface>
+     </hal>
+
     <hal format="hidl">
         <name>com.qualcomm.qti.dpm.api</name>
         <transport>hwbinder</transport>
@@ -170,6 +179,26 @@
         <transport>hwbinder</transport>
         <fqname>@2.0::IHealth/default</fqname>
         <fqname>@2.0::IHealth/backup</fqname>
+    </hal>
+        <hal format="aidl">
+        <name>android.hardware.security.keymint</name>
+        <version>3</version>
+        <fqname>IKeyMintDevice/strongbox</fqname>
+        <fqname>IKeyMintDevice/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.security.keymint</name>
+        <version>3</version>
+        <fqname>IRemotelyProvisionedComponent/strongbox</fqname>
+        <fqname>IRemotelyProvisionedComponent/default</fqname>
+    </hal>
+     <hal format="aidl">
+        <name>android.hardware.security.sharedsecret</name>
+        <fqname>ISharedSecret/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.security.secureclock</name>
+        <fqname>ISecureClock/default</fqname>
     </hal>
     <sepolicy>
         <version>34.0</version>

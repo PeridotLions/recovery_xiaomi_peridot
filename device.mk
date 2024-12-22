@@ -55,15 +55,16 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0 \
     libkeymint \
     strace \
-    libpuresoftkeymasterdevice
+    libpuresoftkeymasterdevice \
+    android.se.omapi
 
 
-TW_INCLUDE_CRYPTO := false
-TW_INCLUDE_CRYPTO_FBE := false
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 BOARD_USES_METADATA_PARTITION := true
 BOARD_USES_QCOM_FBE_DECRYPTION := false
-BOARD_USES_QCOM_DECRYPTION := false
+BOARD_USES_QCOM_DECRYPTION := true
 TWRP_INCLUDE_LOGCAT := true
 
 

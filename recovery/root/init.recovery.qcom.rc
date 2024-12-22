@@ -39,7 +39,7 @@ on early-init
     write /sys/fs/selinux/enforce 0
 
 on init
-    start vendor.qseecomd
+    start vendor.keymint-qti
     write /sys/class/backlight/panel0-backlight/brightness 200
     setprop sys.usb.configfs 1
 
@@ -61,17 +61,12 @@ on fs
     write /sys/kernel/boot_adsp/boot 1
     wait /sys/class/power_supply/battery
 
-
-on property:twrp.modules.loaded=true
-    # Mount persist
-    mkdir /mnt/vendor/persist
-    mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist ro
-
 on property:twrp.all.users.decrypted=true
     umount /mnt/vendor/persist
 
-
 on boot
+    mkdir /mnt/vendor/persist
+    mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist ro
     setprop sys.usb.config adb
 
 # END Recovery_StabilityEnhance
