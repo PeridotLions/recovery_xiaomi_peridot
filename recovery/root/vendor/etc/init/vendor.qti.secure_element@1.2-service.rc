@@ -1,7 +1,7 @@
 on property:ro.crypto.state=encrypted && property:hwservicemanager.ready=true
     start vendor.secure_element
 
-service vendor.secure_element /vendor/bin/hw/android.hardware.secure_element-service.qti
+service vendor.secure_element /vendor/bin/hw/vendor.qti.secure_element@1.2-service
     class hal
     user system
     group nfc system
