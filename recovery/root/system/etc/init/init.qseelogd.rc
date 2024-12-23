@@ -1,4 +1,4 @@
-on post-fs-data
+on init
 	mkdir /cache/qseelog  0775 system system
 
 service qseelogd /system_ext/bin/qseelogd -num 5 -size 4194304

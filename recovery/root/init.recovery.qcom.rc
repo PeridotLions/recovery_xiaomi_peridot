@@ -67,6 +67,14 @@ on property:twrp.all.users.decrypted=true
 on boot
     mkdir /mnt/vendor/persist
     mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist ro
-    setprop sys.usb.config adb
+    start overrideprops
+
+service overrideprops /system/bin/overrideprops.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
+
 
 # END Recovery_StabilityEnhance

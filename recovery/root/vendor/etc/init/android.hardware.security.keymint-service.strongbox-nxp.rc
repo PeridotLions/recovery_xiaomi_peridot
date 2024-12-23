@@ -1,7 +1,0 @@
-service vendor.keymint-strongbox /vendor/bin/hw/android.hardware.security.keymint-service.strongbox-nxp
-    class early_hal
-    user vendor_nxp_strongbox
-    group vendor_nxp_strongbox
-    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
-    capabilities WAKE_ALARM
-    seclabel u:r:recovery:s0
